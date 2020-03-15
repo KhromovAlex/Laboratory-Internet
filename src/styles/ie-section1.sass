@@ -1,0 +1,103 @@
+.ie-9
+    .section-header
+        display: table
+        width: 100%
+
+    .header
+        @extend %clearfix
+
+    .header__left
+        float: left
+
+    .header__right
+        float: right
+
+        &:after
+            content: ''
+            display: inline-block
+            height: 100%
+            width: 1px
+            vertical-align: middle
+
+    .phone
+        display: inline-block
+        vertical-align: middle
+        margin-right: 10px
+
+        &__icon, &__text
+            display: inline-block
+
+    .socials
+        display: inline-block
+        vertical-align: middle
+
+        &__item
+            display: inline-block
+
+    .menu-button
+        display: inline-block
+        vertical-align: middle
+
+    .section-header__progress-wrap
+        @media (max-width: 768px)
+            display: table-footer-group
+
+    .progress
+        display: block
+
+        @media (max-width: 768px)
+            display: table
+            margin: 0 auto
+
+    .progress__item
+        &:after
+            content: ''
+            display: inline-block
+            height: 100%
+            width: 1px
+            vertical-align: middle
+
+    .progress__img-wrap, .progress__img-level, .progress__text
+        display: inline-block
+        vertical-align: middle
+
+    .progress__img-wrap
+        text-align: center
+        
+        &:after
+            content: ''
+            display: inline-block
+            height: 100%
+            width: 1px
+            vertical-align: middle
+
+    .progress__img-prize
+        display: inline-block
+        vertical-align: middle
+
+    .menu.active
+        display: block
+
+    .menu__wrap
+        height: 100%
+        text-align: center
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+
+        &:after
+            content: ''
+            display: inline-block
+            height: 100%
+            width: 1px
+            vertical-align: middle
+
+    .menu__list
+        display: inline-block
+        vertical-align: middle
+
+    .menu__item
+        display: block
+        vertical-align: middle

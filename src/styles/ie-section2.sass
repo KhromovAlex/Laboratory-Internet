@@ -1,0 +1,35 @@
+.ie-9
+    .slider__slide.active
+        display: block
+        @extend %clearfix
+
+        @media (max-width: 992px)
+            display: table
+
+    .slider-item__desc
+        float: left
+
+        @media (max-width: 992px)
+            float: none
+            display: table-footer-group
+
+    .slider-item__picture
+        float: right
+
+        @media (max-width: 992px)
+            float: none
+
+    .slider__controls
+        display: block
+        text-align: center
+
+        &:after
+            content: ''
+            display: inline-block
+            height: 100%
+            width: 1px
+            vertical-align: middle
+
+    .slider__control-prev, .slider__count, .slider__control-next
+        display: inline-block
+        vertical-align: middle

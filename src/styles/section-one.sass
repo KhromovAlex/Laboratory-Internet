@@ -1,0 +1,322 @@
+.section-header
+    background: url('../images/bg-first-section.jpg') no-repeat
+    background-size: cover
+    color: #fff
+    padding-top: 176px
+    padding-bottom: 84px
+
+    @media (max-width: 768px)
+        display: flex
+        flex-direction: column
+        background-size: 100% 300px
+
+    @media (max-width: 480px)
+        padding-top: 157px
+        padding-bottom: 34px
+        background-size: auto 300px
+
+.header
+    display: flex
+    padding-top: 25px
+    padding-bottom: 25px
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    transition: color .5s, background .5s
+
+    .container
+        display: flex
+
+    @media (max-width: 768px)
+        padding-top: 14px
+        padding-bottom: 14px
+
+.header_white
+    color: #303030
+    background: #fff
+
+    .logo__img
+        fill: #000
+
+    .menu-button
+        &:before, &:after
+            background: #000
+
+.logo
+    display: flex
+    align-items: center
+
+.logo__img
+    fill: #fff
+    width: 219px
+    height: 58px
+
+    @media (max-width: 768px)
+        width: 102px
+        height: 27px
+
+.header__left
+    display: flex
+    justify-content: center
+    align-items: center
+
+.header__right
+    margin-left: auto
+    display: flex
+    align-items: center
+
+.phone
+    margin-right: 42px
+    display: flex
+    font-weight: bold
+
+    @media (max-width: 800px)
+        z-index: 100
+        margin: 0
+        color: #303030
+
+.phone__icon
+    margin-right: 20px
+
+.phone__text
+    font-size: 24px
+    line-height: 29px
+
+.socials
+    display: flex
+    list-style: none
+    padding: 0
+    margin: 0
+    margin-right: 49px
+
+    @media (max-width: 800px)
+        z-index: 100
+        margin: 0
+        margin-top: 68px
+
+.socials__item + .socials__item
+    margin-left: 28px
+
+.menu-button
+    width: 50px
+    height: 50px
+    background: none
+    cursor: pointer
+    border: none
+    position: relative
+
+    @media (max-width: 800px)
+        margin-left: auto
+
+    @media (max-width: 480px)
+        width: 35px
+        height: 35px
+
+    &:before, &:after
+        content: ''
+        display: block
+        width: 100%
+        height: 2px
+        position: absolute
+        left: 0
+        background: #fff
+        transition: .3s
+
+    &:before
+        top: 18.5px
+
+        @media (max-width: 480px)
+            top: 11px
+
+    &:after
+        bottom: 18.5px
+
+        @media (max-width: 480px)
+            bottom: 11px
+
+    &.active
+        &:before
+            top: 50%
+            transform: translate(0px, -50%) rotate(-45deg)
+
+        &:after
+            top: 50%
+            transform: translate(0px, -50%) rotate(45deg)
+
+.section-header__title
+    margin-bottom: 10px
+
+    @media (max-width: 480px)
+        margin-bottom: 5px
+
+.section-header__text
+    margin-bottom: 45px
+    font-size: 50px
+
+    .first-word
+        color: #FF3754
+
+    @media (max-width: 768px)
+        font-size: 20px
+
+    @media (max-width: 480px)
+        margin-bottom: 17px
+
+.section-header__progress-wrap
+    margin: 0
+    margin-bottom: 123px
+
+    @media (max-width: 768px)
+        order: 10
+        margin: 0 auto
+        margin-bottom: 0
+
+    @media (max-width: 480px)
+        width: 100%
+
+.progress
+    list-style: none
+    padding: 0
+
+.progress__item
+    display: flex
+    align-items: center
+
+.progress__img-wrap
+    width: 70px
+    height: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    @media (max-width: 480px)
+        width: 46px
+        height: 46px
+
+.progress__img-prize
+    width: 70px
+    height: 70px
+
+    @media (max-width: 480px)
+        width: 46px
+        height: 46px
+
+    &_small
+        width: 40px
+        height: 40px
+
+        @media (max-width: 480px)
+            width: 26px
+            height: 26px
+
+.progress__img-level
+    @media (max-width: 480px)
+        width: 15px
+        height: 15px
+
+.progress__text
+    margin-left: 50px
+    font-size: 24px
+    line-height: 29px
+
+    @media (max-width: 768px)
+        font-size: 14px
+        color: #303030
+        margin-left: 13px
+
+    &_active
+        font-size: 36px        
+        background: #FF3754
+        border-radius: 4px
+        padding: 10px
+        color: #fff
+
+        @media (max-width: 768px)
+            font-size: 20px
+            padding: 3px
+
+.button
+    background: #FF3754
+    border: 1px solid #FF3754
+    border-radius: 4px
+    cursor: pointer
+    color: #ffffff
+    padding: 23px 80px
+    text-transform: uppercase
+    font-size: 19px
+    text-align: center
+    letter-spacing: 0.155em
+
+    @media (max-width: 768px)
+        width: 100%
+        order: 5
+        font-size: 16px
+        padding: 26px
+        margin-bottom: 26px
+
+.menu
+    display: none
+    flex-direction: column
+
+    &.active
+        display: flex
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        justify-content: center
+        align-items: center
+        z-index: 50
+        background: rgba(255, 255, 255, 1)
+
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: url('../images/bg-first-section.jpg')
+        filter: blur(50px)
+        z-index: 30
+
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba(255, 255, 255, .87)
+        z-index: 40
+
+.menu__wrap
+    z-index: 100
+    overflow: auto
+    width: 100%
+
+.menu__list
+    z-index: 100
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.menu__link
+    display: block
+    font-size: 50px
+    color: #303030
+    font-weight: bold
+    padding: 10px
+
+    &:hover
+        text-decoration: underline
+
+    @media (max-width: 800px)
+        font-size: 20px

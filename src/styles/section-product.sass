@@ -1,0 +1,93 @@
+.section-product
+    padding-top: 59px
+    padding-bottom: 144px
+    background: linear-gradient(180deg, #FDF4F4 0%, #ECF3EC 100%)
+
+    @media (max-width: 768px)
+        padding-top: 48px
+        padding-bottom: 48px
+
+.section-product__title
+    margin-bottom: 65px
+
+    @media (max-width: 768px)
+        margin-bottom: 15px
+
+.date-block
+    display: none
+    list-style: none
+    margin: 0
+    padding: 0
+
+    @media (max-width: 480px)
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: -10px
+        margin-left: -2%
+
+        .date-block__item
+            width: 22%
+            margin-left: 2%
+            margin-top: 10px
+
+        .date-block__button
+            display: block
+            width: 100%
+            border: 1px solid #888888
+            border-radius: 4px
+            text-align: center
+            padding: 10px
+            background: #fff
+            color: #888888
+            cursor: pointer
+
+            &.active
+                background: #FF3754
+                border: 1px solid #FF3754
+                color: #fff
+
+.section-product__list
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    margin-left: -2%
+    margin-top: -76px
+
+    @media (max-width: 480px)
+        width: 100%
+        margin-left: 0
+        margin-top: 6px
+
+.product
+    width: 23%
+    margin-left: 2%
+    margin-top: 76px
+
+    @media (max-width: 768px)
+        width: 48%
+
+    @media (max-width: 480px)
+        width: 100%
+        margin-left: 0
+        display: flex
+        flex-direction: column
+
+.product__img
+    max-width: 100%
+    height: auto
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+
+.product__title
+    line-height: 160%
+    font-weight: bold
+    margin-top: 26px
+
+.product__text
+    line-height: 160%
+    margin-top: 10px
+
+.section-product__svg-ie
+    display: none
